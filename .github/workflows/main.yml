@@ -1,0 +1,48 @@
+name: Deploy to develop Environment
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - develop
+
+jobs:
+  job1:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: ssh and deploy
+        uses: appleboy/ssh-action@master # １
+        with: # ２ アクションの入力パラメータを指定
+          host: ${{ secrets.SSH_HOST }} # ホスト名
+          username: ${{ secrets.SSH_USERNAME }} # SSH ユーザ名
+          key: ${{ secrets.SSH_PRIVATE_KEY }} # 秘密鍵の内容
+          passphrase: ${{ secrets.SSH_PASSPHRASE }} # passphrase
+          port: ${{ secrets.SSH_PORT }} # ポート番号
+          script: |
+            git switch develop
+            git pull origin develop
+            docker compose down
+            docker compose run --rm nuxt-app rm -rf .nuxt
+            docker compose run --rm nuxt-app rm -rf .output
+            docker compose run --rm nuxt-app rm -rf node_modules
+            docker compose run --rm nuxt-app npm install
+            docker compose run --rm nuxt-app npm run build
+            docker compose build
+            docker compose up -d --force-recreate
+            # Run Composer Install to install dependencies
+            docker compose run --rm laravel-docker composer install --no-interaction --prefer-dist
+            docker compose run --rm laravel-docker php artisan cache:clear 
+            docker compose run --rm laravel-docker php artisan config:clear 
+            docker compose run --rm laravel-docker php artisan config:cache 
+            docker compose run --rm laravel-docker php artisan route:clear 
+            docker compose run --rm laravel-docker php artisan view:clear 
+            docker compose run --rm laravel-docker php artisan clear-compiled 
+            docker compose run --rm laravel-docker php artisan optimize 
+            docker compose run --rm laravel-docker composer dump-autoload 
+            docker compose run --rm laravel-docker rm -f bootstrap/cache/config.php
+            docker compose run --rm laravel-docker php artisan migrate
+            # docker compose run --rm laravel-docker php artisan db:seed
+            docker image prune -a -f
+            docker builder prune -a -f
+            docker compose run --rm laravel-docker service apache2 restart

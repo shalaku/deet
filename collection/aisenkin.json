@@ -1,0 +1,3309 @@
+{
+	"info": {
+		"_postman_id": "83fef40f-234a-4fab-a399-550a9df6b20d",
+		"name": "AisekiSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16848002",
+		"_collection_link": "https://lively-flare-309050.postman.co/workspace/API~e29cf9dc-ec26-4197-bd94-04aba2530bb2/collection/16848002-83fef40f-234a-4fab-a399-550a9df6b20d?action=share&source=collection_link&creator=16848002"
+	},
+	"item": [
+		{
+			"name": "Cast Category",
+			"item": [
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category_name\" : \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/cast-categories",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"cast-categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Store",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"category_name\" : \"test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/cast-categories",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"cast-categories"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:26:11 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=LkznKUgmL19kb34Vatjf098dsiBYtf9de9Ls7kCN5eJsSPXhuLJ1nhlwwvbq4D%2FHtFVg%2F0AHRgnQUQHxWrua5m62Nqc8JMbrx5wi6%2BUuFKMuRFwTAn%2FJjkWJcpOjXQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d2945e26c899c2d-SIN"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 201,\n    \"message\": \"Cast Category Create Successfully.\",\n    \"data\": {\n        \"category_name\": \"test\",\n        \"updated_at\": \"2024-10-14T17:26:11.000000Z\",\n        \"created_at\": \"2024-10-14T17:26:11.000000Z\",\n        \"id\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category_name\" : \"tes1t-update\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/cast-categories/4",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"cast-categories",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"category_name\" : \"tes1t-update\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/cast-categories/4",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"cast-categories",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:27:23 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=Ysj0xsRXA4N%2BqzD1msOA7te4DwLyUY6HXf3zj8L6HnBwJhqhnV%2B7AvPcpnDMyN4BJy1%2BDuO7yexi8XZxZ4QPdxp3fGk8kV96RVygiYutOXtPAuY8K1DKyH9w2KLeAQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d2947a2f9259c2d-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 200,\n    \"message\": \"Cast Category Update Successfully.\",\n    \"data\": {\n        \"id\": 4,\n        \"category_name\": \"tes1t-update\",\n        \"created_at\": \"2024-10-14T17:27:00.000000Z\",\n        \"updated_at\": \"2024-10-14T17:27:23.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "show",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/cast-categories/4",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"cast-categories",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "show",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/cast-categories/4",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"cast-categories",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:27:38 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=dCl%2FOydh4%2Br9niWR%2BlJ8tPz6IelU46V37s11RnIfWNkhnLiw7MMHGHJvW0yhY9TvmZOI%2BdqHmgNIUJ9hTI%2FYFiMWoXCVy0YDscxCNJWBkRR8Ez0vXlnmZVlaw4jJjQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d2948011d0b9c2d-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 200,\n    \"message\": \"Cast Category Details.\",\n    \"data\": {\n        \"id\": 4,\n        \"category_name\": \"tes1t-update\",\n        \"created_at\": \"2024-10-14T17:27:00.000000Z\",\n        \"updated_at\": \"2024-10-14T17:27:23.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/cast-categories/4",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"cast-categories",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/api/cast-categories/4",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"cast-categories",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:28:05 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=Pwm0RcUb0cNKuv%2Fv5T7JD%2B83A5L2NCnLOOVIF3kSsU1ds3v3ZKNmWxVF8U86148vtX9m6Oq%2FWxYAt5FxTPEbgbJ350kCcPn9ahpoU1KEFQLf3A10uKAharuzd6QK8Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d2948a4991e9c2d-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 200,\n    \"message\": \"Cast Category Delete Successfully.\",\n    \"data\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/cast-categories",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"cast-categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/api/cast-categories",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"cast-categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:27:48 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "55"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=gFi1H1S%2BCtpEHi58CX1HDBp4Oa3ZEcLtOPOk9LW6cOF0YY2R9sLJOonnvgXTMmY%2Bz5Ul7WefM%2BbAab3Ytv8AakC19gusOZRhcVm7qMzPV1mhjFbJhQO2ii8vp89SuQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d29483d3a4d9c2d-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 200,\n    \"message\": \"Cast Category List.\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"category_name\": \"test\",\n            \"created_at\": \"2024-10-14T17:26:11.000000Z\",\n            \"updated_at\": \"2024-10-14T17:26:11.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"category_name\": \"test\",\n            \"created_at\": \"2024-10-14T17:26:31.000000Z\",\n            \"updated_at\": \"2024-10-14T17:26:31.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"category_name\": \"test\",\n            \"created_at\": \"2024-10-14T17:26:58.000000Z\",\n            \"updated_at\": \"2024-10-14T17:26:58.000000Z\"\n        },\n        {\n            \"id\": 4,\n            \"category_name\": \"tes1t-update\",\n            \"created_at\": \"2024-10-14T17:27:00.000000Z\",\n            \"updated_at\": \"2024-10-14T17:27:23.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Customer Category",
+			"item": [
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category_name\" : \"Customer Category v2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/customer-categories",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer-categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Store",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"category_name\" : \"Customer Category v2\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/customer-categories",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"customer-categories"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:28:40 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=BVUo17zzQoccFXdSXFQpcunmSLyVv5XMI7Uc7smOxn2aeApBVYgaz8yb6NK6iGiipQK41vFL8GglG8tMmJ%2Ft9FxDlW9VyzBqofViC0kRLWAZIM4CikIPQf%2B98qvjrA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d294984b8cc9c2d-SIN"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 201,\n    \"message\": \"Customer Category Create Successfully.\",\n    \"data\": {\n        \"category_name\": \"Customer Category v2\",\n        \"updated_at\": \"2024-10-14T17:28:40.000000Z\",\n        \"created_at\": \"2024-10-14T17:28:40.000000Z\",\n        \"id\": 2\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category_name\" : \"Customer Category Update\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/customer-categories/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer-categories",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"category_name\" : \"Customer Category Update\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/customer-categories/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"customer-categories",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:29:13 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=XTOHqMIbKnZBth%2FDPT%2BU1ELH353XRaYM8GAm%2FYNWHo4ejy6XSiT6E%2Bkgn4TXCOVtElEamVf2zs4Y3loOGeDLYrzqSPsmfpa0HCPJEb61BCRnjOW80pFweaEQvf6gGg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d294a51cb819c2d-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 200,\n    \"message\": \"Customer Category Update Successfully.\",\n    \"data\": {\n        \"id\": 2,\n        \"category_name\": \"Customer Category Update\",\n        \"created_at\": \"2024-10-14T17:28:40.000000Z\",\n        \"updated_at\": \"2024-10-14T17:29:13.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "show",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/customer-categories/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer-categories",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "show",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/customer-categories/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"customer-categories",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:29:42 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=rzRje%2Bbu6HQ35mXFyqt9wvvPDZMZZzDVDp5ujfFG48EV2fSkJRMexA4gk%2FLYq2h9tttDZDFMN6RpGrgVWr6cN80pSBo5S2rfR9TTEsg%2FzkVOnmmRxPh4oZYXHt12Dw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d294b03b9a09c2d-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 200,\n    \"message\": \"Customer Category Details.\",\n    \"data\": {\n        \"id\": 2,\n        \"category_name\": \"Customer Category Update\",\n        \"created_at\": \"2024-10-14T17:28:40.000000Z\",\n        \"updated_at\": \"2024-10-14T17:29:13.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/customer-categories/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer-categories",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/api/customer-categories/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"customer-categories",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:30:18 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=iCBqyJ6rgWt3O2frUE1yta4Ke5FGJ9yrC%2FNGfT6yQ6GNgrujdaE5Woj3ME6PnX3TO27%2BCWLMZ5WPxfqk7WKuLCCLm7Kx%2BvBKESJoq76St5bgrulgU4pMQY5l1F4Emg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d294be81a639c2d-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 200,\n    \"message\": \"Customer Category Delete Successfully.\",\n    \"data\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/customer-categories",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer-categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/api/customer-categories",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"customer-categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:30:00 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=4h6AUyguUMEUuWg49E6Cpxzi6mH5Q%2F1cQkkrBP5KdedSKySMm%2FCdZYcuxgBQ0fsdI29TStuj0w4hnxBC2E8%2Bc%2BpMRpZKV%2BEfQf6qEE4xvlqCSNr5W4n6S84qm9PE7Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d294b78c9609c2d-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 200,\n    \"message\": \"Customer Category List.\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"category_name\": \"Customer Category\",\n            \"created_at\": \"2024-10-14T17:28:35.000000Z\",\n            \"updated_at\": \"2024-10-14T17:28:35.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"category_name\": \"Customer Category Update\",\n            \"created_at\": \"2024-10-14T17:28:40.000000Z\",\n            \"updated_at\": \"2024-10-14T17:29:13.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status_id\": 1,\n    \"name_ja\": \"Sample Name\",\n    \"name_kana\": \"サンプルカナ\",\n    \"birthday\": \"1990-01-01 00:00:00\",\n    \"introducer_id\": 1,\n    \"person_in_charge_id\": 10,\n    \"category_id\": 3,\n    \"registered_date\": \"2023-01-01 00:00:00\",\n    \"tag_of_preference\": \"[\\\"tag1\\\", \\\"tag2\\\", \\\"tag3\\\"]\",\n    \"notices\": \"This is a sample notice.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/customers",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name_ja\" : \"Update\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/customers/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customers",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/customers/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customers",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/customers/4",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customers",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Customer",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/customers?limit=100&offset=0",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customers"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "name_ja",
+									"value": "up",
+									"disabled": true
+								},
+								{
+									"key": "name_kana",
+									"value": "SampleNameKana",
+									"disabled": true
+								},
+								{
+									"key": "birthday",
+									"value": "1990-01-01",
+									"disabled": true
+								},
+								{
+									"key": "introducer_id",
+									"value": "123",
+									"disabled": true
+								},
+								{
+									"key": "person_in_charge_id",
+									"value": "456",
+									"disabled": true
+								},
+								{
+									"key": "category_id",
+									"value": "789",
+									"disabled": true
+								},
+								{
+									"key": "registered_date",
+									"value": "2023-01-01",
+									"disabled": true
+								},
+								{
+									"key": "tag_of_preference",
+									"value": "PreferenceTag",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cast",
+			"item": [
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name_ja\": \"John Doe\",\n    \"name_kana\": \"ジョン ドウ\",\n    \"city\": \"Tokyo\",\n    \"person_in_charge_id\": 10,\n    \"registered_date\": \"2023-10-01\",\n    \"status_id\": 1,\n    \"rank\": \"A\",\n    \"post_code\": \"1234567\",\n    \"prefecture\": \"Tokyo\",\n    \"municipalitie\": \"Shibuya\",\n    \"street\": \"1-2-3\",\n    \"building\": \"Sunshine Building\",\n    \"station\": \"Shibuya\",\n    \"footwork\": \"good\",\n    \"alcohol\": \"average\",\n    \"day_work\": \"Office Worker\",\n    \"night_work\": \"Bartender\",\n    \"height\": 175,\n    \"three_size_b\": 90,\n    \"three_size_w\": 70,\n    \"three_size_h\": 85,\n    \"vip_status\": \"good\",\n    \"birthday\": \"1990-05-15\",\n    \"ceo_check\": true,\n    \"instagram_id\": \"john_doe_insta\",\n    \"category_id\": 2,\n    \"tag_of_spec\": [\"friendly\", \"punctual\"],\n    \"notices\": \"No night shifts preferred\",\n    \"email\": \"cast1@gmail.com\",\n    \"password\": \"cast1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/cast",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"cast"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Store",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name_ja\": \"John Doe\",\n    \"name_kana\": \"ジョン ドウ\",\n    \"city\": \"Tokyo\",\n    \"person_in_charge_id\": 10,\n    \"registered_date\": \"2023-10-01\",\n    \"status_id\": 1,\n    \"rank\": \"A\",\n    \"post_code\": \"1234567\",\n    \"prefecture\": \"Tokyo\",\n    \"municipalitie\": \"Shibuya\",\n    \"street\": \"1-2-3\",\n    \"building\": \"Sunshine Building\",\n    \"station\": \"Shibuya\",\n    \"footwork\": \"good\",\n    \"alcohol\": \"average\",\n    \"day_work\": \"Office Worker\",\n    \"night_work\": \"Bartender\",\n    \"height\": 175,\n    \"three_size_b\": 90,\n    \"three_size_w\": 70,\n    \"three_size_h\": 85,\n    \"vip_status\": \"good\",\n    \"birthday\": \"1990-05-15\",\n    \"ceo_check\": true,\n    \"instagram_id\": \"john_doe_insta\",\n    \"category_id\": 2,\n    \"tag_of_spec\": [\"friendly\", \"punctual\"],\n    \"notices\": \"No night shifts preferred\",\n    \"email\": \"cast1@gmail.com\",\n    \"password\": \"cast1234\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/cast",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"cast"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:34:33 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=JYPOx00lLk0di2ucM6tJAFt5P7QSrYPhZ%2FjAlRVopCiR6Uvg62eyqPaBVMcusrjdt42TitynCTqgT29tOFqq%2FNQBoXuuEaahxRjSjjlGZpNeOvNgM%2Fm4GjeitU0wNQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d29521c49a09c2d-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 200,\n    \"message\": \"Cast created successfully.\",\n    \"data\": {\n        \"name_ja\": \"John Doe\",\n        \"name_kana\": \"ジョン ドウ\",\n        \"city\": \"Tokyo\",\n        \"introducer_id\": null,\n        \"person_in_charge_id\": 10,\n        \"registered_date\": \"2023-10-01\",\n        \"status_id\": 1,\n        \"rank\": \"A\",\n        \"post_code\": \"1234567\",\n        \"prefecture\": \"Tokyo\",\n        \"municipalitie\": \"Shibuya\",\n        \"street\": \"1-2-3\",\n        \"building\": \"Sunshine Building\",\n        \"station\": \"Shibuya\",\n        \"footwork\": \"good\",\n        \"alcohol\": \"average\",\n        \"day_work\": \"Office Worker\",\n        \"night_work\": \"Bartender\",\n        \"height\": 175,\n        \"three_size_b\": 90,\n        \"three_size_w\": 70,\n        \"three_size_h\": 85,\n        \"vip_status\": \"good\",\n        \"birthday\": \"1990-05-15\",\n        \"ceo_check\": true,\n        \"instagram_id\": \"john_doe_insta\",\n        \"category_id\": 2,\n        \"tag_of_spec\": \"[\\\"friendly\\\",\\\"punctual\\\"]\",\n        \"notices\": \"No night shifts preferred\",\n        \"user_id\": 12,\n        \"updated_at\": \"2024-10-14T17:34:32.000000Z\",\n        \"created_at\": \"2024-10-14T17:34:32.000000Z\",\n        \"id\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name_ja\" : \"test\",\n    \"bank_details\" : {\n        \"bank_name\" : \"update\",\n        \"account_number\": \"12345678\",\n        \"branch\": \"testBranch\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/cast/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"cast",
+								"update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name_ja\" : \"Cast Name Update\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/cast/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"cast",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:35:16 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=%2BvYsKXkYiFK9PMU9V2NvOVyMzpl90CUKUuTurkzM7RuYPFv273EBIZ5c0nSWGo6wgdshwcbJ9E7fHAdwm%2FlP%2BrbihjUGuAzQ3nBgYOJMHtZYJ8o947UpjmZEgTezMg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d29532f6f679c2d-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 200,\n    \"message\": \"Cast Update successfully.\",\n    \"data\": {\n        \"id\": 1,\n        \"user_id\": 12,\n        \"name_ja\": \"Cast Name Update\",\n        \"name_kana\": \"ジョン ドウ\",\n        \"city\": \"Tokyo\",\n        \"introducer_id\": null,\n        \"person_in_charge_id\": 10,\n        \"registered_date\": \"2023-10-01\",\n        \"status_id\": 1,\n        \"rank\": \"A\",\n        \"post_code\": \"1234567\",\n        \"prefecture\": \"Tokyo\",\n        \"municipalitie\": \"Shibuya\",\n        \"street\": \"1-2-3\",\n        \"building\": \"Sunshine Building\",\n        \"station\": \"Shibuya\",\n        \"footwork\": \"good\",\n        \"alcohol\": \"average\",\n        \"day_work\": \"Office Worker\",\n        \"night_work\": \"Bartender\",\n        \"height\": 175,\n        \"three_size_b\": 90,\n        \"three_size_w\": 70,\n        \"three_size_h\": 85,\n        \"vip_status\": \"good\",\n        \"birthday\": \"1990-05-15 00:00:00\",\n        \"ceo_check\": 1,\n        \"instagram_id\": \"john_doe_insta\",\n        \"category_id\": 2,\n        \"tag_of_spec\": \"[\\\"friendly\\\",\\\"punctual\\\"]\",\n        \"notices\": \"No night shifts preferred\",\n        \"created_at\": \"2024-10-14T17:34:32.000000Z\",\n        \"updated_at\": \"2024-10-14T17:35:16.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "show",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/cast/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"cast",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "show",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/cast/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"cast",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:35:35 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=G5VQSoP7ajWBIELzHwTPonBtpX%2FOlFuPeu2SKtx0OmSgfIXzVBJ4RSFnv2E0e8K%2FEVZv68ke9ilmND6fgjACAapytMY92%2F0h4k7XsaGdXd2nf%2Bp405Tpcoq1Oo%2FnXg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d2953a43c299c2d-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 200,\n    \"message\": \"Cast retrieved successfully.\",\n    \"data\": {\n        \"id\": 1,\n        \"user_id\": 12,\n        \"name_ja\": \"Cast Name Update\",\n        \"name_kana\": \"ジョン ドウ\",\n        \"city\": \"Tokyo\",\n        \"introducer_id\": null,\n        \"person_in_charge_id\": 10,\n        \"registered_date\": \"2023-10-01\",\n        \"status_id\": 1,\n        \"rank\": \"A\",\n        \"post_code\": \"1234567\",\n        \"prefecture\": \"Tokyo\",\n        \"municipalitie\": \"Shibuya\",\n        \"street\": \"1-2-3\",\n        \"building\": \"Sunshine Building\",\n        \"station\": \"Shibuya\",\n        \"footwork\": \"good\",\n        \"alcohol\": \"average\",\n        \"day_work\": \"Office Worker\",\n        \"night_work\": \"Bartender\",\n        \"height\": 175,\n        \"three_size_b\": 90,\n        \"three_size_w\": 70,\n        \"three_size_h\": 85,\n        \"vip_status\": \"good\",\n        \"birthday\": \"1990-05-15 00:00:00\",\n        \"ceo_check\": 1,\n        \"instagram_id\": \"john_doe_insta\",\n        \"category_id\": 2,\n        \"tag_of_spec\": \"[\\\"friendly\\\",\\\"punctual\\\"]\",\n        \"notices\": \"No night shifts preferred\",\n        \"created_at\": \"2024-10-14T17:34:32.000000Z\",\n        \"updated_at\": \"2024-10-14T17:35:16.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/cast/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"cast",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Cast",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/cast?limit=50&page=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"cast"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "50"
+								},
+								{
+									"key": "name_ja",
+									"value": "John Doe",
+									"disabled": true
+								},
+								{
+									"key": "name_kana",
+									"value": "Sato",
+									"disabled": true
+								},
+								{
+									"key": "birthday",
+									"value": "1990-01-01",
+									"disabled": true
+								},
+								{
+									"key": "introducer_id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "person_in_charge_id",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "registered_date",
+									"value": "2023-01-01",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Cast",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/api/cast?limit=50&offset=0",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"cast"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "50"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "name_ja",
+											"value": "John Doe",
+											"disabled": true
+										},
+										{
+											"key": "name_kana",
+											"value": "Sato",
+											"disabled": true
+										},
+										{
+											"key": "birthday",
+											"value": "1990-01-01",
+											"disabled": true
+										},
+										{
+											"key": "introducer_id",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "person_in_charge_id",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "registered_date",
+											"value": "2023-01-01",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:35:54 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=ej7KKnWgqH5hgs32pyPNh2U0wgygtnM0l8n1iPCTExp%2Ftxx4aqiG3qc94plIMdhWN4dGtJWEO5sjYaWwxnLOJFDl%2FmDoHqU6RRoGcM5s1Sb8YmWCLLKOsaX4kBcFEw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d29541a4a7e9c2d-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 200,\n    \"message\": \"Casts retrieved successfully.\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"user_id\": 12,\n            \"name_ja\": \"Cast Name Update\",\n            \"name_kana\": \"ジョン ドウ\",\n            \"city\": \"Tokyo\",\n            \"introducer_id\": null,\n            \"person_in_charge_id\": 10,\n            \"registered_date\": \"2023-10-01\",\n            \"status_id\": 1,\n            \"rank\": \"A\",\n            \"post_code\": \"1234567\",\n            \"prefecture\": \"Tokyo\",\n            \"municipalitie\": \"Shibuya\",\n            \"street\": \"1-2-3\",\n            \"building\": \"Sunshine Building\",\n            \"station\": \"Shibuya\",\n            \"footwork\": \"good\",\n            \"alcohol\": \"average\",\n            \"day_work\": \"Office Worker\",\n            \"night_work\": \"Bartender\",\n            \"height\": 175,\n            \"three_size_b\": 90,\n            \"three_size_w\": 70,\n            \"three_size_h\": 85,\n            \"vip_status\": \"good\",\n            \"birthday\": \"1990-05-15 00:00:00\",\n            \"ceo_check\": 1,\n            \"instagram_id\": \"john_doe_insta\",\n            \"category_id\": 2,\n            \"tag_of_spec\": \"[\\\"friendly\\\",\\\"punctual\\\"]\",\n            \"notices\": \"No night shifts preferred\",\n            \"created_at\": \"2024-10-14T17:34:32.000000Z\",\n            \"updated_at\": \"2024-10-14T17:35:16.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/cast/profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"cast",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Status",
+			"item": [
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status_category\" : \"cast\",\n    \"status_name\": \"test\",\n    \"desc\" : \"desc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/statuses",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"statuses"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Store",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status_category\" : \"cast\",\n    \"status_name\": \"test\",\n    \"desc\" : \"desc\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/statuses",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"statuses"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:31:40 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=Glw0UlXycdSanHiKSnsUdB%2BqSg43ifJG1NaEiqzsPc%2FlzGg6%2Byqt3tXYwlnG%2BXxtFbvjus5jTLdNB1eodXFTRuAhnsjz9jcQ8e1dGdSu7K7LJv7tVarYHbWQ%2FYQjhQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d294de7b87a9c2d-SIN"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 201,\n    \"message\": \"Status Create Successfully.\",\n    \"data\": {\n        \"status_category\": \"cast\",\n        \"status_name\": \"test\",\n        \"desc\": \"desc\",\n        \"updated_at\": \"2024-10-14T17:31:40.000000Z\",\n        \"created_at\": \"2024-10-14T17:31:40.000000Z\",\n        \"id\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status_category\" : \"cast\",\n    \"status_name\": \"testoygihp\",\n    \"desc\" : \"desc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/statuses/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"statuses",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status_category\" : \"cast\",\n    \"status_name\": \"testoygihp\",\n    \"desc\" : \"desc\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/statuses/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"statuses",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:31:59 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=mFol0%2F52%2FWfgf7Q8%2BQ599CquiMrqNkIty3UNchOi%2FaBwvRkte0yQbdDsJKhlIr9q1eLUFIU6DIgdpaC2YswWMO5EblqWCxYV%2FUef7uUmiZkgCYnwbqGXGyXXb0BkfA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d294e5ead469c2d-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 200,\n    \"message\": \"Status Update Successfully.\",\n    \"data\": {\n        \"id\": 1,\n        \"status_category\": \"cast\",\n        \"status_name\": \"testoygihp\",\n        \"desc\": \"desc\",\n        \"created_at\": \"2024-10-14T17:31:40.000000Z\",\n        \"updated_at\": \"2024-10-14T17:31:59.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "show",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/statuses/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"statuses",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "show",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/statuses/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"statuses",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:32:21 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=CbLu2Q2pW6dwrckNkX8aA3svyx1vdeqh96viUSvYxmkvOzNHUjX6bNnybnm82R1G8x4f2utGI0Di4olbWBWSPfI%2FXakL3oWS5WZpGWu7e3tpAO%2BtNlUvY16jZJtD0Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d294ee8de6a9c2d-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 200,\n    \"message\": \"Status Details.\",\n    \"data\": {\n        \"id\": 1,\n        \"status_category\": \"cast\",\n        \"status_name\": \"testoygihp\",\n        \"desc\": \"desc\",\n        \"created_at\": \"2024-10-14T17:31:40.000000Z\",\n        \"updated_at\": \"2024-10-14T17:31:59.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/statuses/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"statuses",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Statuses",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/statuses",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"statuses"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Statuses",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/api/statuses",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"statuses"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2024 17:32:32 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.24"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private, must-revalidate"
+								},
+								{
+									"key": "pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=RXmQ12NW3JRtVYjuEgdIbEb2oAmz3XO19QpylOCRIUHvty1M8Q73cCQt8AlqnRdssa%2F8Z9Pggh86YkAZ0ZFMithJTKCEC1COKUF%2B4%2FAc83%2BAgTjU7AmUpPXRrudtnA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8d294f2ad8659c2d-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"SUCCESS\",\n    \"status_code\": 200,\n    \"message\": \"Status List.\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"status_category\": \"cast\",\n            \"status_name\": \"testoygihp\",\n            \"desc\": \"desc\",\n            \"created_at\": \"2024-10-14T17:31:40.000000Z\",\n            \"updated_at\": \"2024-10-14T17:31:59.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Image",
+			"item": [
+				{
+					"name": "Store Image",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images[0][image]",
+									"type": "file",
+									"src": "/home/bs684/Pictures/Screenshot from 2023-11-20 19-06-16.png"
+								},
+								{
+									"key": "images[0][image_for]",
+									"value": "cast",
+									"type": "text"
+								},
+								{
+									"key": "images[0][owner_id]",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/image/store",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"image",
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/image/14",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"image",
+								"14"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name_ja\" : \"test_user\",\n    \"email\" : \"test@gmail1.com\",\n    \"password\" : \"12345678\",\n    \"account_type\" : \"admin\",\n    \"user_type\" : \"admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/register",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout All Device",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/logout-all",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"logout-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"type": "text"
+					},
+					{
+						"key": "refresh_token",
+						"value": "{{refresh_token}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/logout",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"access_token\", \"Bearer \"+jsonData.data.token.access_token);",
+							"postman.setEnvironmentVariable(\"refresh_token\", jsonData.data.token.refresh_token);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"cast1@gmail.com\",\n    \"password\" : \"cast1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh Token",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "refresh_token",
+						"value": "{{refresh_token}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/refresh",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name_ja\" : \"test_user\",\n    \"email\" : \"test@gmail.com\",\n    \"password\" : \"12345678\",\n    \"account_type\" : \"admin\",\n    \"user_type\" : \"admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/profile",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

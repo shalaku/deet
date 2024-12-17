@@ -1,0 +1,51 @@
+.page-siteadmin {
+    max-height: 100vh;
+    background-color: #fff;
+
+    .site-admin-layout {
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 1.5fr 8fr;
+    }
+
+    .siteadmin-sidebar {
+        min-width: 15rem;
+        background: #2f353a 0% 0% no-repeat padding-box;
+        padding: 20px 12px;
+        overflow-y: auto;
+        height: 100vh;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+    
+
+    .siteadmin-sidebar p {
+        /* font-size: 12px; */
+    }
+
+    .sidebar-menu {
+        position: fixed;
+    }
+
+    .header {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .site-admin-layout {
+        display: grid;
+        grid-template-columns: 3r 8fr;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .site-admin-layout {
+        display: block;
+    }
+
+    .siteadmin-sidebar {
+        display: none;
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "name": "Deet - User",
+    "short_name": "Deet",
+    "start_url": "/siteadmin/",
+    "scope": "/siteadmin/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1d1a16",
+    "icons": [
+      {
+        "src": "/siteadmin/icons/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/siteadmin/icons/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "screenshots": [
+        {
+          "src": "/siteadmin/images/screenshot1.png",
+          "type": "image/png",
+          "sizes": "540x720",
+          "form_factor": "narrow"
+        }
+      ]
+  }
+  

@@ -1,0 +1,15 @@
+.page-user {
+    .content {  
+        background-color: var(--deet-color-cotent-base);
+    }
+    .modal {
+        .modal-content {
+            background-color: var(--deet-color-cotent-base);
+            .modal-header,
+            .modal-footer {
+                /* border-color: var(--deet-color-gold-dark); */
+                border-color: transparent;
+            }
+        }
+    }
+}

@@ -1,0 +1,355 @@
+#app.chat-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f5f5f5;
+    max-width: 1800px; /* Restrict maximum width for large screens */
+    padding: 0 16px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 52px;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+    z-index: 99;
+  
+  
+    .dialog-item {
+      background-color: var(--deet-color-base);
+      border: 0px solid transparent;
+      .list-item-text {
+        color: var(--deet-color-font);
+      }
+    }
+  
+    .chat-header-back {
+      img {
+        filter: invert(1);
+      }
+    }
+    .TUIKit {
+      max-height: calc(100dvh - var(--header-height) - var(--footer-menu-height))
+    }
+    .chat-header-content {
+      color: var(--deet-color-font);
+    }
+    .TUIKit-main-main {
+      background-color: var(--deet-color-cotent-base);
+    }
+    .message-bubble-main-content {
+      background-color: var(--deet-color-cotent-base);
+      margin: 0 !important;
+    }
+    .message-input-wrapper {
+      border-top: .5px solid #414141;
+    }
+    .message-input-editor-container {
+      border: none;
+      border-radius: 20px;
+      background: var(--deet-color-base);
+    }
+    .message-input-button-cont {
+      background-color: var(--deet-color-gold);
+      padding: 10px 20px;
+    }
+    .message-input-editor-area {
+      color: var(--deet-color-font);
+    }
+    .message-body-content {
+      background: var(--deet-color-base);
+      color: var(--deet-color-font);
+      padding: 8px 8px 4px 8px;
+      .text {
+        font-size: 16px;
+        line-height: 1.15;
+      }
+    }
+    .message-input-toolbar-list {    
+      > div {
+        display: none;
+      }
+      .common-icon {
+        filter: invert(1);
+      }
+    }
+    .avatar-container {
+      width: 40px !important;
+      height: 40px !important;
+      border-radius: 20px !important;
+      img {
+        filter: grayscale(1);
+      }
+    }
+    .control-reverse {
+      .avatar-container {
+        display: none;
+      }
+      .message-body-content {
+        background-color: #977f5e;
+      }
+    }
+    .message-label {
+      &.unread {
+        span {
+          color: var(--deet-color-gold);
+        }
+      }
+    }
+  
+    .tui-conversation {
+      background-color: var(--deet-color-cotent-base);
+      .tui-conversation-item {
+        .name {
+          font-weight: bold;
+          line-height: 1.2;
+          font-size: 16px;
+          color: var(--deet-color-font);
+        }
+      }
+      .tui-conversation-content {
+        .tui-conversation-item::before {
+          content: "";
+          position: absolute;
+          border-bottom: .5px solid #414141;
+          width: calc(100% - 80px);
+          right: 0;
+          bottom: 0;
+        }
+      }
+      .tui-conversation-item {
+        position: relative;
+        align-items: flex-start;
+        .avatar-image {
+          filter: grayscale(1);
+        }
+        .content {
+          padding-left: 10px;
+        }
+        > aside {
+          width: 58px;
+          height: 58px;
+          .avatar-container {
+            width: 58px !important;
+            height: 58px !important;
+            border-radius: 29px !important;
+          }
+        }
+        .middle-box-content {
+          font-size: 14px !important;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 12px;
+          line-height: 20px;
+          white-space: normal;
+          padding: 0em 1em 0 0em;
+        }
+      }
+    }
+    .TUIKit-main-aside {
+      border: none;
+    }
+    .tui-search {
+      display: none;
+    }
+    .TUIKit-navbar {
+      display: none;
+    }
+  }
+  
+  #app.chat-app .message-input-editor-container {
+    width: 100%;
+  }
+  
+  .callkit-container {
+    margin-top: 20px;
+  }
+  
+  #app.chat-app .message-bubble-main-content {
+    display: flex;
+    margin: 8px 0;
+    gap: 12px; /* Equal spacing for both sender and receiver */
+  
+    /* Differentiate sender and receiver messages */
+    &.sender {
+      flex-direction: row-reverse; /* Sender's avatar on the right */
+      justify-content: flex-end;
+    }
+  
+    &.receiver {
+      flex-direction: row; /* Receiver's avatar on the left */
+      justify-content: flex-start;
+    }
+  
+    /* Avatar styles */
+    .message-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #007bff; /* Placeholder background color */
+    }
+  
+    /* Message body styling */
+    .message-body {
+      max-width: 100%;
+      padding: 0;
+      border-radius: 15px;
+      font-size: 14px;
+      line-height: 1.4;
+      word-wrap: break-word;
+      position: relative;
+      text-transform: none;
+      align-items: flex-start;
+      margin: 0;
+  
+      >.message-body-main {
+        max-width: 80vw;  
+      }
+      &.sender {
+        background-color: #d1eaff;
+        color: #333;
+        border-top-right-radius: 0;
+      }
+  
+      &.receiver {
+        background-color: #f1f1f1;
+        color: #333;
+        border-top-left-radius: 0;
+      }
+    }
+    &.reverse {
+      .message-body {
+        align-items: flex-end;      
+      }
+    }  
+  }
+  
+  /* Adjustments for larger screens like laptops and desktops */
+  @media (min-width: 1200px) and (max-width: 1800px) {
+    #app.chat-app {
+        padding: 0 40px; /* Adjust padding for better spacing */
+        max-width: 1400px; /* Center content without stretching too much */
+        background-color: #f5f5f5;
+    }
+
+    .message-avatar {
+        width: 44px; /* Slightly larger avatar */
+        height: 44px;
+    }
+
+    .message-body {
+        max-width: 65%; /* Reduce width for better centering */
+        padding: 14px 18px; /* Slightly larger padding */
+        font-size: 15px; /* Comfortable font size */
+        line-height: 1.6; /* Better text readability */
+    }
+
+    .message-bubble-main-content {
+        gap: 16px; /* More spacing between avatar and message body */
+    }
+
+    .message-input-editor-container {
+        max-width: 100%; /* Ensure editor spans the full width */
+        padding: 10px; /* Comfortable typing area */
+    }
+
+    .tui-conversation {
+        padding: 8px 16px; /* Balanced spacing for conversations */
+        .tui-conversation-item {
+            .name {
+                font-size: 17px; /* Slightly larger for readability */
+            }
+            .middle-box-content {
+                font-size: 13px; /* Keep text compact */
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .chat-header-content {
+        font-size: 18px; /* Standout header text */
+    }
+
+    .message-body-content {
+        padding: 12px; /* Even padding for message content */
+        font-size: 16px; /* Readable font size for laptops */
+    }
+}
+
+  /* Responsive adjustments for general large screens */
+  @media (min-width: 1800px) {
+    #app.chat-app {
+      padding: 0 48px;
+      max-width: 1400px; /* Restrict max width to keep content centered */
+    }
+  
+    .message-avatar {
+      width: 48px;
+      height: 48px;
+    }
+  
+    .message-body {
+      max-width: 60%;
+      padding: 14px 18px;
+      font-size: 16px;
+    }
+  }
+  
+  /* Responsive adjustments for medium screens (tablets and small desktops) */
+  @media (max-width: 1200px) {
+    #app.chat-app {
+      padding: 0 24px;
+    }
+  
+    .message-avatar {
+      width: 36px;
+      height: 36px;
+    }
+  
+    .message-body {
+      max-width: 75%;
+      padding: 10px 12px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Smaller devices like tablets and larger phones */
+  @media (max-width: 768px) {
+    #app.chat-app {
+      padding: 0 12px;
+    }
+  
+    .message-avatar {
+      width: 32px;
+      height: 32px;
+    }
+  
+    .message-body {
+      max-width: 85%;
+      padding: 8px 10px;
+      font-size: 13px;
+    }
+  }
+  
+  /* Extra small devices (e.g., small phones) */
+  @media (max-width: 480px) {
+    #app.chat-app {
+      padding: 0 8px;
+    }
+  
+    .message-avatar {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .message-body {
+      max-width: 90%;
+      padding: 6px 8px;
+      font-size: 12px;
+    }
+  }
+  
+  

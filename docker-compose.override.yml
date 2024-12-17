@@ -1,0 +1,7 @@
+# docker-compose.override.yml (開発環境用)
+services:
+  nuxt-app:
+    ports:
+      - "3000:3000"
+      - "24678:24678"  # 開発環境でのみ使用するポート
+    command: [ "npm", "run", "dev" ]  # 開発環境用のコマンド

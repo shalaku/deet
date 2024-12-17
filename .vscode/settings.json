@@ -1,0 +1,15 @@
+{
+	"eslint.enable": true,
+	"[typescript][vue]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll": "explicit",
+			"source.organizeImports": "explicit"
+		},
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"workbench.tree.enableStickyScroll": false,
+	"editor.stickyScroll.scrollWithEditor": true,
+	"editor.hover.sticky": true,
+	"editor.stickyScroll.enabled": false,
+	"css.lint.unknownAtRules": "ignore"
+}

@@ -1,0 +1,83 @@
+/cert/
+/.ssh/
+/.viminfo
+/.git/
+/.bash_history
+/.bash_logout
+/.bashrc
+/.profile
+/.vim
+/.vscode-server
+
+# enviroment
+docker-compose.yml
+/nginx/nginx.conf
+/laravel/Dockerfile
+/docker/app/apache2/apache2.conf
+/docker/app/apache2/sites-available/000-default.conf
+/docker/app/apache2/sites-available/default-ssl.conf
+
+#Docker
+.docker/
+
+# mysql
+docker/mysql/storage
+
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+html/storage
+html/hot
+
+# Laravel 5 & Lumen specific with changed public path
+public_html/storage
+public_html/hot
+
+laravel/www/storage
+storage/*.key
+.env
+Homestead.yaml
+Homestead.json
+/.vagrant
+.phpunit.result.cache
+
+
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+#jetbrains IDE files
+.idea
+/.idea
+.dotnet/
+.gitconfig
+.sudo_as_admin_successful
+.wget-hsts
+laravel/www/html/storage
+nuxt/customplugin/axios.js

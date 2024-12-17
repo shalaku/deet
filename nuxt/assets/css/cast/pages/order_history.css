@@ -1,0 +1,70 @@
+.text-10px {
+	font-size: 10px;
+}
+
+
+
+/* table */
+.order-details {
+	/* padding: 20px; */
+}
+
+.table th,
+.table td {
+	vertical-align: middle;
+	color: #707070;
+}
+
+td {
+	cursor: default;
+}
+
+.status-badge {
+	display: inline-block;
+	width: 55px;
+	height: 18px;
+	font-size: 8px;
+	border-radius: 4px;
+	padding-top: 3px;
+}
+
+.status-pending {
+	background-color: #d87c20;
+	color: #ffffff;
+}
+
+.status-confirmed {
+	background-color: #0dbe00;
+	color: #ffffff;
+}
+
+.status-completed {
+	background-color: #005fbe;
+	color: #ffffff;
+}
+
+.status-cancelled {
+	background-color: #7f7f7f;
+	color: #ffffff;
+}
+
+.status-default {
+	background-color: #7f7f7f;
+	color: #ffffff;
+}
+
+.btn-blue {
+	background: #409fff;
+	color: #ffffff;
+	padding: 5px 13px;
+	font-size: 7px;
+	margin-right: 12px;
+}
+
+.btn-blue:hover {
+	background: #409fff;
+	color: #ffffff;
+	padding: 5px 13px;
+	font-size: 7px;
+	margin-right: 12px;
+}

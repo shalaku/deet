@@ -1,0 +1,8 @@
+@import url('@coreui/coreui/dist/css/coreui.min.css');
+/* @import url('bootstrap/dist/css/bootstrap.min.css'); */
+@import url('./icomoon.css');
+@import url('./common_layout.css');
+@import url('./chat.css');
+/* @import url('./common_layout_siteadmin.css'); */
+/* @import url('./common_layout_customer.css'); */
+/* @import url('./common_layout_cast.css'); */

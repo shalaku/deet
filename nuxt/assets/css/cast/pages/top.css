@@ -1,0 +1,159 @@
+.page-cast,
+.page-user {
+.top {
+
+	main-area {
+		margin: 0;
+		padding: 0;
+	}
+
+	.status-tab-bg {
+		max-width: 1300px;
+		margin: 0 auto 0 auto;
+		background-color: #1d1a16;
+		overflow-y: hidden;
+		.status-tab {
+			display: inline-block;
+			padding: 10px 64px;
+			background-color: #342f28;
+			color: #fff;
+			/* border-top-left-radius: 2px; */
+			/* border-top-right-radius: 2px; */
+			font-weight: bold;
+		}
+	}
+
+	.thin-top-padding {
+		padding-top: 20px;
+	}
+
+	.required-call-list {
+		table {
+			overflow-x: auto;
+			display: block;
+
+			th,
+			td {
+				white-space: nowrap;
+			}
+		}
+	}
+
+	.profile-pic {
+		width: 200px;
+		height: auto;
+		aspect-ratio: 3 / 4;
+	}
+
+	.uploaded-image {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		aspect-ratio: 3 / 4;
+	}
+
+	.profile-info {
+		/* max-width: 550px; */
+		.age,
+		.place {
+			color: rgb(193, 160, 108);
+			padding-right: 0.5rem;
+		}
+	}
+
+
+
+
+
+	.text-18px {
+		font-size: 18px;
+	}
+	.text-20px {
+		font-size: 20px;
+	}
+
+	.text-26px {
+		font-size: 26px;
+	}
+
+	.text-28px {
+		font-size: 28px;
+	}
+
+	.mt-40px {
+		margin-top: 40px;
+	}
+
+	/* table */
+	.table th,
+	.table td {
+		vertical-align: middle;
+		color: #707070;
+	}
+
+	td {
+		cursor: default;
+	}
+
+	.order-details {
+		/* padding: 20px; */
+	}
+
+	.status-badge {
+		display: inline-block;
+		width: 55px;
+		height: 18px;
+		font-size: 8px;
+		border-radius: 4px;
+		padding-top: 1px;
+	}
+
+	.status-pending {
+		background-color: rgb(193, 160, 108);
+		color: rgb(29, 26, 22);
+		font-size: 11px;
+		font-weight: bold;
+		padding: 4px 8px;
+		display: inline;
+		border-radius: 7px;
+		/* background-color: #d87c20; */
+		/* color: #ffffff; */
+	}
+
+	.status-confirmed {
+		background-color: #0dbe00;
+		color: #ffffff;
+	}
+
+	.status-completed {
+		background-color: #005fbe;
+		color: #ffffff;
+	}
+
+	.status-cancelled {
+		background-color: #7f7f7f;
+		color: #ffffff;
+	}
+
+	.status-default {
+		background-color: #7f7f7f;
+		color: #ffffff;
+	}
+
+	.btn-blue {
+		background: #409fff;
+		color: #ffffff;
+		/* padding: 5px 13px; */
+		/* font-size: 7px; */
+		/* margin-right: 12px; */
+	}
+
+	.btn-blue:hover {
+		/* background: #409fff; */
+		/* color: #ffffff; */
+		/* padding: 5px 13px; */
+		/* font-size: 7px; */
+		/* margin-right: 12px; */
+	}
+}
+}
